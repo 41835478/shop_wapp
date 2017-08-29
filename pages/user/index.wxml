@@ -1,0 +1,61 @@
+<view class="container">
+
+  <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+
+  <view class="zan-panel">
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">昵称</view>
+      <view class="zan-cell__ft">{{userInfo.nickName}}</view>
+    </view>
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">性别</view>
+      <view class="zan-cell__ft">男</view>
+    </view>
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">城市</view>
+      <view class="zan-cell__ft">上海</view>
+    </view>
+
+  </view>
+
+  
+
+  
+
+
+  <view class="zan-panel">
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">收藏</view>
+      <view class="zan-arrow"></view>
+    </view>
+
+  
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">浏览记录</view>
+      <view class="zan-arrow"></view>
+    </view>
+
+  </view>
+
+
+  <view class="zan-panel">
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">联系客服</view>
+      <view class="zan-arrow"></view>
+    </view>
+
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">帮助中心</view>
+      <view class="zan-arrow"></view>
+    </view>
+
+  </view>
+
+</view>
