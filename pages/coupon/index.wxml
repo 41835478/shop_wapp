@@ -1,86 +1,26 @@
 
 
-<template name="zan-tab">
-    <view class="zan-tab">
-
-        <block wx:if="{{tab.scroll}}">
-            <scroll-view
-          class="zan-tab__bd zan-tab__bd--scroll {{ fixed ? 'zan-tab__bd--fixed' : '' }}"
-          scroll-x="true"
-          style="height: {{ tab.height ? tab.height + 'px' : 'auto' }}"
-        >
-                <template is="zan-tab-list" data="{{ tab, componentId }}"></template>
-            </scroll-view>
-        </block>
-
-        <block wx:else>
-            <view class="zan-tab__bd {{fixed ? 'zan-tab__bd--fixed' : ''}}">
-                <template is="zan-tab-list" data="{{ tab, componentId }}"></template>
-            </view>
-        </block>
-
-    </view>
-</template>
-
-<template name="zan-tab-list">
-    <view
-    wx:for="{{tab.list}}"
-    wx:key="id"
-    class="zan-tab__item {{tab.selectedId == item.id ? 'zan-tab__item--selected' : ''}}"
-    data-component-id="{{componentId}}"
-    data-item-id="{{item.id}}"
-    bindtap="handleZanTabChange"
-  >
-        <view class="zan-tab__title">{{item.title}}</view>
-    </view>
-</template>
-
-
-
-
-
 
 
 <view class="container">
-
-    <view style="border:1rpx solid #e5e5e5;border-radius:2px;margin:5px;padding:4.6px;" class="zan-cell-border zan-form__item" >
-      <input class="zan-form__input zan-cell__bd search_btn" placeholder="输入你要搜索的内容"  />
-    </view>
-
-    <view style="border-radius:2px; margin:5px;">
-    <image style="width:100%;height:200px;" src="../../asset/img/banner.png"></image>
-    </view>
-    <view >
-        <template is="zan-tab" data="{{tab: tab1, componentId: 'tab1'}}"></template>
-    </view>
-
-    <view class="zan-cell">
-        <view class="zan-cell__bd">
-            <view>
-                <image style="width:100%;height:200px;" src="../../asset/img/banner.png"></image>
-                <view class="zan-font-16 zan-font-bold">天府灰姑娘自煮方便小火锅</view>
-                <view class="zan-font-10">来自: 网易严选 ｜ 16777人已购买</view>
-            </view>
+    
+    <view style="display:block;margin-top:200px;">
+        <view >
+            <view class="zan-cell zan-form__item" style="border:1px;">
+                <input class="zan-form__input zan-cell__bd search_btn" placeholder="输入淘宝/天猫/聚划算 商品标题或者关键字"  />
+            </view> 
         </view>
+
+        <view class="zan-loadmore zan-loadmore--nodata" >
+          <view class="zan-loadmore__tips">天猫/淘宝查券详细教程</view>
+        </view>
+
+        <view class="zan-loadmore zan-loadmore--nodata" style="margin-top:20px;">
+          <view class="zan-loadmore__tips">加入天猫/淘宝优惠券微信群</view>
+        </view>
+
     </view>
 
-    <view class="zan-cell">
-        <view class="zan-cell__bd">
-            <view>
-                <image style="width:100%;height:200px;" src="../../asset/img/banner.png"></image>
-                <view class="zan-font-16 zan-font-bold">天府灰姑娘自煮方便小火锅</view>
-                <view class="zan-font-10">来自: 网易严选 ｜ 16777人已购买</view>
-            </view>
-        </view>
-    </view>
-
-    <view class="zan-cell">
-        <view class="zan-cell__bd">
-            <view>
-                <image style="width:100%;height:200px;" src="../../asset/img/banner.png"></image>
-                <view class="zan-font-16 zan-font-bold">天府灰姑娘自煮方便小火锅</view>
-                <view class="zan-font-10">来自: 网易严选 ｜ 16777人已购买</view>
-            </view>
-        </view>
-    </view>
+    
+    
 </view>

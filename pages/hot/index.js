@@ -1,31 +1,59 @@
-//index.js
-//获取应用实例
-var app = getApp()
-Page({
+//var Zan = require('tab');
+
+Page(Object.assign({}, {
+
   data: {
     motto: 'Hello World',
-    userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    userInfo: {},
+
+    tab1: {
+      list: [{
+        id: 'all',
+        title: '聚划算'
+      },{
+        id: 'nvzhuang',
+        title: '淘抢购'
+      }, {
+        id: 'nanzhuang',
+        title: '9.9元包邮'
+      }, {
+        id: 'neiyi',
+        title: '29.9元'
+      }, {
+        id: 'muying',
+        title: '进口商品'
+      }, {
+        id: 'baobao',
+        title: '品牌商品'
+      }, {
+        id: 'peishi',
+        title: '24小时畅销'
+      }, {
+        id: 'meizhuang',
+        title: '视频商品'
+      }],
+      selectedId: 'all',
+      scroll: true
+    }
   },
   onReady: function () {
     wx.setNavigationBarTitle({
       title: '热销'
     })
   },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
-  }
-})
+  handleZanTabChange(e) {
+    var dataset = e.currentTarget.dataset;
+    var componentId = dataset.componentId;
+    var selectedId = dataset.itemId;
+    // var data = { componentId, selectedId };
+
+    // var componentId = e.componentId;
+    // var selectedId = e.selectedId;
+    console.log(selectedId);
+    this.setData({
+      [`${componentId}.selectedId`]: selectedId
+    });
+  },
+
+
+}));

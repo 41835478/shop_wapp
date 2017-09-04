@@ -22,7 +22,22 @@
   </view>
 
   
+<view class="zan-panel">
 
+    <view class="zan-cell">
+      <view class="zan-cell__bd">订单补贴</view>
+
+      <view class="zan-badge__count" style="top:auto;right:40px;">Hot</view>
+      <view class="zan-arrow "></view>
+    </view>
+
+
+    <view class="zan-cell">
+      <view class="zan-cell__bd">查券教程</view>
+      <view class="zan-arrow"></view>
+    </view>
+
+  </view>
   
 
 

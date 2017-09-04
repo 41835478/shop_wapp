@@ -24,7 +24,7 @@
       "selectedIconPath":"asset/img/home_1.png"
     },{
       "pagePath": "pages/coupon/index",
-      "text": "优惠券",
+      "text": "找优惠券",
       "iconPath":"asset/img/coupon_0.png",
       "selectedIconPath":"asset/img/coupon_1.png"
     }, {

@@ -56,7 +56,7 @@ Page(Object.assign({}, {
   },
   onReady: function () {
     wx.setNavigationBarTitle({
-      title: '优惠券'
+      title: '超级搜索'
     })
   },
   handleZanTabChange(e) {
