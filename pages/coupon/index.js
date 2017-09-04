@@ -14,29 +14,41 @@ Page(Object.assign({}, {
         id: 'nvzhuang',
         title: '女装'
       }, {
-        id: 'jiajujiazhuang',
-        title: '家居家装'
+        id: 'nanzhuang',
+        title: '男装'
       }, {
-        id: 'shumajiadian',
-        title: '数码家电'
+        id: 'neiyi',
+        title: '内衣'
       }, {
         id: 'muying',
         title: '母婴'
       }, {
-        id: 'shiping',
-        title: '食品'
+        id: 'baobao',
+        title: '包包'
       }, {
-        id: 'xiebaofushi',
-        title: '鞋包配饰'
+        id: 'peishi',
+        title: '配饰'
       }, {
-        id: 'meizhuanggehu',
-        title: '美妆个护'
+        id: 'meizhuang',
+        title: '美妆'
       }, {
-        id: 'nanzhuangneiyi',
-        title: '男装内衣'
+        id: 'jujia',
+        title: '居家'
       }, {
-        id: 'yundonghuwai',
-        title: '运动户外'
+        id: 'xieping',
+        title: '鞋品'
+      }, {
+        id: 'meishi',
+        title: '美食'
+      }, {
+        id: 'wenti',
+        title: '文体'
+      }, {
+        id: 'jiadian',
+        title: '家电'
+      }, {
+        id: 'qita',
+        title: '其它'
       }],
       selectedId: 'all',
       scroll: true

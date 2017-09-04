@@ -36,3 +36,15 @@
 .zan-tab__bd--scroll .zan-tab__item {
   min-width: 40px;
 }
+
+.zan-cell-border {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.search_btn {
+    background: url('http://api.manage.we-wind.cn/img/search.png') no-repeat scroll right center transparent;
+}
